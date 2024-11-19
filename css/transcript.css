@@ -1,0 +1,58 @@
+/* Transcript Section Styling */
+#transcript {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    text-align: center;
+}
+#transcript:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Table Styling */
+.table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.table th, .table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.table thead th {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+}
+.table tbody tr:hover {
+    background-color: #e9ecef;
+}
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/* ปุ่มย้อนกลับ */
+#back-button {
+    font-weight: bold;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #007bff, #6f42c1);
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#back-button:hover {
+    background: linear-gradient(45deg, #6f42c1, #007bff);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+#back-button i {
+    margin-right: 8px;
+}
+
+/*----------------------------------------------------------------*/

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipop Maneewan's Resume</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="Resume.css">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <button id="theme-toggle" class="btn btn-light d-flex align-items-center gap-2 shadow-sm rounded-pill">
+            <i id="theme-icon" class="fas fa-moon"></i>
+            <span id="theme-text">Switch to Dark Mode</span>
+        </button>
+        
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Pipop Maneewan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Transcript.html">Transcript</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+        
+            
+    </nav>
+    <!-- Main Content -->
+    <main class="container mt-5">
+        <!-- About Me Section -->
+        <section id="about" class="text-center p-4">
+            <div class="profile-image-wrapper">
+                <img src="photo/profile.jpg" alt="Profile Picture" class="profile-img rounded-circle mb-3" data-bs-toggle="modal" data-bs-target="#profileModal" style="cursor: pointer;">
+            </div>
+            <h1 class="display-4 text-gradient">Pipop Maneewan</h1>
+            <em class="text-muted">Computer Engineering & Artificial Intelligence</em>
+            <p class="mt-3">I'm passionate about working with data and creating efficient systems. My goal is to become a Data Engineer, contributing to data-driven decision-making in organizations.</p>
+        </section>
+    </main>
+    
+    <!-- Modal สำหรับแสดงประวัติส่วนตัว -->
+    <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="profileModalLabel">About Pipop Maneewan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <!-- เพิ่มรูปภาพตัวเอง -->
+                    <img src="photo/your-profile.jpg" alt="Profile Picture" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                    
+                    <!-- เนื้อหาเกี่ยวกับประวัติ -->
+                    <p>Hello! My name is Pipop Maneewan. I am currently studying Computer Engineering with a focus on Artificial Intelligence. I have a strong passion for working with data, creating efficient systems, and developing solutions that aid in data-driven decision-making within organizations.</p>
+                    <p>My career goal is to become a skilled Data Engineer, where I can leverage my expertise in data processing, database management, and data analytics to drive business insights and enhance organizational performance.</p>
+                    <p>Outside of my studies, I enjoy exploring new technologies, reading about AI advancements, and working on personal projects that improve my technical skills.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+        <hr>
+
+        <!-- Education Section -->
+        <section id="education" class="text-center p-4">
+            <h2 class="text-gradient mb-4">Education</h2>
+            <div class="education-list">
+                <div class="education-item d-flex align-items-center mb-4">
+                    <img src="photo/pim_logo.jpg" alt="PIM Logo" class="institution-logo me-3">
+                    <div class="education-details">
+                        <h5>Panyapiwat Institute of Management (2023 - Now)</h5>
+                        <p>Computer Engineering GPA: 2.65</p>
+                    </div>
+                </div>
+                <div class="education-item d-flex align-items-center">
+                    <img src="photo/chonburi_logo.png" alt="Chonburi Technical College Logo" class="institution-logo me-3">
+                    <div class="education-details">
+                        <h5>Chonburi Technical College (2020 - 2023)</h5>
+                        <p>INFORMATION TECHNOLOGY GPA: 2.98</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <hr>
+        <section id="experience" class="text-center p-4">
+            <h2 class="text-primary mb-4">Experience</h2>
+            <div class="accordion" id="experienceAccordion">
+                <!-- CST | Sahakarn Sugar -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <img src="photo/sahakarn_logo.jpg" alt="Sahakarn Sugar Logo" class="company-logo me-3">
+                            CST | Sahakarn Sugar (2016 - 2023)
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <strong>Position:</strong> General Mechanic & Team Leader<br>
+                            Gained experience in team leadership and maintaining mechanical systems in a large-scale operation.
+                        </div>
+                    </div>
+                </div>
+                <!-- Ban Bueng District Office -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <img src="photo/banbueng_logo.jpg" alt="Ban Bueng District Office Logo" class="company-logo me-3">
+                            Ban Bueng District Office (2022)
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <strong>Position:</strong> Data Entry Officer<br>
+                            Managed and entered critical municipal data efficiently and accurately.
+                        </div>
+                    </div>
+                </div>
+                <!-- C.P. ALL Public Company Limited -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <img src="photo/cpall_logo.png" alt="C.P. ALL Logo" class="company-logo me-3">
+                            C.P. ALL Public Company Limited (2024)
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <strong>Position:</strong> Cashier<br>
+                            Provided excellent customer service and handled transactions efficiently.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        
+        <hr>
+        <section id="skills" class="text-center p-4">
+            <h2 class="text-gradient mb-4">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card skill-card bg-light mb-3 text-center">
+                        <div class="card-body">
+                            <i class="fab fa-html5 fa-3x skill-icon text-danger"></i>
+                            <h5 class="card-title mt-3">HTML</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card skill-card bg-light mb-3 text-center">
+                        <div class="card-body">
+                            <i class="fab fa-css3-alt fa-3x skill-icon text-primary"></i>
+                            <h5 class="card-title mt-3">CSS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card skill-card bg-light mb-3 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-database fa-3x skill-icon text-warning"></i>
+                            <h5 class="card-title mt-3">SQL</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card skill-card bg-light mb-3 text-center">
+                        <div class="card-body">
+                            <i class="fab fa-java fa-3x skill-icon text-success"></i>
+                            <h5 class="card-title mt-3">JAVA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card skill-card bg-light mb-3 text-center">
+                        <div class="card-body">
+                            <i class="fab fa-js fa-3x skill-icon text-warning"></i>
+                            <h5 class="card-title mt-3">JavaScript</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Contact Section -->
+        <section id="contact" class="p-4">
+            <h2 class="text-gradient mb-4 text-center">Contact Me</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex align-items-center">
+                    <i class="fas fa-envelope me-3 icon text-danger"></i> 
+                    <span>Email: <a href="mailto:moo@gmail.com" class="contact-link">moo00@gmail.com</a></span>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <i class="fas fa-phone me-3 icon text-success"></i> 
+                    <span>Phone: <a href="tel:+66950000914" class="contact-link">+66 95-0000-914</a></span>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <i class="fas fa-map-marker-alt me-3 icon text-primary"></i> 
+                    <span>Address: Royal </span>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                    <i class="fab fa-github me-3 icon text-dark"></i>
+                    <span>GitHub: <a href="https://github.com/Pipop0" target="_blank" class="contact-link">github.com/Pipop0</a></span>
+                </li>
+            </ul>
+            <p class="mt-4 text-center">
+                <a href="http://pim.ac.th" target="_blank" class="btn btn-primary visit-btn">
+                    <i class="fas fa-external-link-alt"></i> Visit PIM
+                </a>
+            </p>
+        </section>
+        
+        
+    </main>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Pipop Maneewan | Powered by Bootstrap 5</p>
+        </footer>
+    
+</body>
+</html>

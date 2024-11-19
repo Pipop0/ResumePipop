@@ -1,0 +1,546 @@
+/* Light Theme (Default) */
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.btn, .list-group-item {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Theme */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .btn {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.dark-mode .list-group-item {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.dark-mode .text-gradient {
+    background: linear-gradient(45deg, #6f42c1, #007bff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/* สไตล์เริ่มต้นของ Navbar */
+/* Navbar Base Styling */
+.navbar {
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #007bff, #6f42c1); /* เพิ่มสีไล่ระดับ */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Link Styling */
+.nav-link {
+    margin-right: 15px; /* เพิ่มช่องว่างระหว่างลิงก์ */
+    font-weight: 500;
+    color: #ffffff !important; /* สีตัวหนังสือ */
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: #ffd700 !important;
+    transform: scale(1.1);
+}
+
+/* Active Link Styling */
+.nav-link.active {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Navbar Brand Styling */
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #ffffff !important;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+.navbar-brand:hover {
+    color: #ffcc00;
+}
+
+/* Navbar Hover Effect */
+.navbar:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Toggler Button */
+.navbar-toggler {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255,255,255,0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    transition: transform 0.3s ease;
+}
+.navbar-toggler:hover .navbar-toggler-icon {
+    transform: rotate(90deg);
+}
+
+/* Transition for Dropdown Menu */
+.navbar-collapse {
+    transition: all 0.3s ease-in-out;
+}
+
+/* ปุ่ม Toggle Theme */
+#theme-toggle {
+    background: linear-gradient(45deg, #6f42c1, #007bff);
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 25px; /* ให้ปุ่มโค้งมน */
+}
+#theme-toggle:hover {
+    background: linear-gradient(45deg, #007bff, #6f42c1);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ไอคอนภายในปุ่ม */
+#theme-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+#theme-toggle:hover #theme-icon {
+    transform: rotate(360deg); /* หมุนเมื่อ Hover */
+    color: #ffd700; /* เปลี่ยนสีไอคอน */
+}
+
+/* ข้อความภายในปุ่ม */
+#theme-text {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* การเปลี่ยนสีสำหรับ Dark Mode */
+body.dark-mode #theme-toggle {
+    background: linear-gradient(45deg, #444, #555);
+    color: #e0e0e0;
+}
+body.dark-mode #theme-toggle:hover {
+    background: linear-gradient(45deg, #555, #444);
+}
+body.dark-mode #theme-icon {
+    color: #fff;
+}
+body.dark-mode #theme-text {
+    color: #fff;
+}
+
+
+
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/* About Section Styling ลูกเล่นหน้าโปรไฟล์*/
+#about {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+#about:hover {
+    transform: scale(1.02);
+}
+
+/* Profile Image Styling */
+.profile-image-wrapper {
+    display: inline-block;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    transition: box-shadow 0.3s;
+}
+.profile-image-wrapper:hover {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Gradient Text Effect */
+.text-gradient {
+    background: linear-gradient(45deg, #007bff, #6f42c1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+/* Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#about .profile-img, #about h1, #about em, #about p {
+    animation: fadeInUp 1s ease forwards;
+}
+#about h1 {
+    animation-delay: 0.3s;
+}
+#about em {
+    animation-delay: 0.5s;
+}
+#about p {
+    animation-delay: 0.7s;
+}
+/* เพิ่มเงาให้กับรูปภาพ */
+.modal-body img {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* ขยายขนาดเล็กน้อยเมื่อ Hover */
+.modal-body img:hover {
+    transform: scale(1.05);
+}
+
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/* สไตล์พื้นฐานของ Modal */
+.modal-content {
+    background-color: #ffffff; /* สีพื้นหลังปกติ */
+    color: #333; /* สีข้อความปกติ */
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Modal สำหรับโหมดมืด */
+.dark-mode .modal-content {
+    background-color: #2e2e2e; /* สีพื้นหลังสีเทาเข้มสำหรับโหมดมืด */
+    color: #e0e0e0; /* สีข้อความในโหมดมืด */
+}
+
+.dark-mode .modal-header,
+.dark-mode .modal-footer {
+    border-color: #444; /* เปลี่ยนสีเส้นขอบของ Header และ Footer ใน Modal */
+}
+
+.dark-mode .btn-close {
+    filter: invert(1); /* เปลี่ยนสีปุ่มปิดในโหมดมืด */
+}
+
+.dark-mode .btn-secondary {
+    background-color: #555; /* ปุ่ม Close สีเทาเข้มในโหมดมืด */
+    color: #e0e0e0;
+    border: none;
+}
+
+.dark-mode .btn-secondary:hover {
+    background-color: #666; /* เปลี่ยนสีปุ่ม Close เมื่อ Hover */
+}
+
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/* code ส่วนของ Experience Section Styling */
+#experience {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+#experience:hover {
+    transform: scale(1.03);
+}
+
+/* Company Logo */
+.company-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+}
+
+/* Accordion Button Styling */
+.accordion-button {
+    font-weight: bold;
+    color: #333;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.accordion-button:hover {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2);
+}
+.accordion-button .company-logo {
+    transition: transform 0.3s ease;
+}
+.accordion-button:not(.collapsed) .company-logo {
+    transform: rotate(360deg);
+}
+
+/* Accordion Body */
+.accordion-body {
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.accordion-item {
+    animation: fadeInUp 0.8s ease forwards;
+    margin-bottom: 10px;
+}
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/*code หน้า Skills*/
+/* Section Title Gradient */
+.text-gradient {
+    background: linear-gradient(45deg, #007bff, #6f42c1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* Skill Card Styling */
+.skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    border-radius: 15px;
+}
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Animation */
+.skill-icon {
+    transition: transform 0.5s ease, color 0.3s ease;
+}
+.skill-card:hover .skill-icon {
+    transform: rotate(360deg) scale(1.2);
+    color: #333;
+}
+
+/* Background Animation Effect */
+.skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top left, rgba(0, 123, 255, 0.2), transparent);
+    transition: transform 0.5s ease;
+    z-index: 0;
+}
+.skill-card:hover::before {
+    transform: scale(1.5);
+}
+
+/* Text Styling */
+.card-title {
+    position: relative;
+    font-weight: bold;
+    z-index: 1;
+    color: #333;
+}
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/* Section Styling หน้า Education */
+#education {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+#education:hover {
+    transform: scale(1.03);
+}
+
+/* Education Item Styling */
+.education-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.education-item {
+    animation: fadeInUp 0.8s ease forwards;
+    position: relative;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+.education-item:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Institution Logo */
+.institution-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+}
+
+/* Education Details */
+.education-details h5 {
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+.education-details p {
+    margin: 0;
+    color: #666;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/* code หน้า contact me */
+/* Section Styling */
+#contact {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+#contact:hover {
+    transform: scale(1.02);
+}
+
+/* Gradient Title Styling */
+.text-gradient {
+    background: linear-gradient(45deg, #007bff, #6f42c1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+
+/* Icon Styling */
+.icon {
+    font-size: 1.8rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.list-group-item:hover .icon {
+    transform: scale(1.3);
+    color: #0056b3;
+}
+
+/* Contact Link Styling */
+.contact-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+.contact-link:hover {
+    color: #0056b3;
+}
+.contact-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #007bff;
+    transition: width 0.3s;
+}
+.contact-link:hover::after {
+    width: 100%;
+}
+
+/* Button Styling */
+.visit-btn {
+    font-weight: bold;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #007bff, #6f42c1);
+    border: none;
+    color: white;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.visit-btn:hover {
+    background: linear-gradient(45deg, #6f42c1, #007bff);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+/*----------------------------------------------------------------*/
